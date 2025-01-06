@@ -156,7 +156,7 @@ function ScheduleApp() {
       <div className="search-bar">
         <input
           type="text"
-          placeholder="搜索老師或學生"
+          placeholder=""
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
