@@ -129,10 +129,7 @@ function ScheduleApp() {
           "E1 21 Nancy": [],
         },
       },
-      "X": {
-        teachers: [],
-        students: {},
-      },
+      
     },
   };
 
