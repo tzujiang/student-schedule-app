@@ -138,6 +138,35 @@ function ScheduleApp() {
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedTeacher, setSelectedTeacher] = useState(null);
   const [searchText, setSearchText] = useState("");
+  const [checkedStudents, setCheckedStudents] = useState([]);
+
+  // 切換日、時段或老師時重置勾選狀態
+  const handleSelectionChange = (type, value) => {
+    setCheckedStudents([]);
+    if (type === "day") {
+      setSelectedDay(value);
+      setSelectedTime(Object.keys(scheduleData[value])[0]);
+      setSelectedTeacher(
+        Object.keys(scheduleData[value][Object.keys(scheduleData[value])[0]])[0]
+      );
+    } else if (type === "time") {
+      setSelectedTime(value);
+      setSelectedTeacher(Object.keys(scheduleData[selectedDay][value])[0]);
+    } else if (type === "teacher") {
+      setSelectedTeacher(value);
+    }
+  };
+
+  // 勾選框變更
+  const handleCheckboxChange = (student) => {
+    setCheckedStudents((prev) => {
+      if (prev.includes(student)) {
+        return prev.filter((s) => s !== student);
+      } else {
+        return [...prev, student];
+      }
+    });
+  };
 
   return (
     <div className="schedule-app">
@@ -167,7 +196,7 @@ function ScheduleApp() {
             <li
               key={index}
               className={selectedDay === day ? "selected" : ""}
-              onClick={() => setSelectedDay(day)}
+              onClick={() => handleSelectionChange("day", day)}
             >
               {day}
             </li>
@@ -184,7 +213,7 @@ function ScheduleApp() {
               <li
                 key={index}
                 className={selectedTime === time ? "selected" : ""}
-                onClick={() => setSelectedTime(time)}
+                onClick={() => handleSelectionChange("time", time)}
               >
                 {time}
               </li>
@@ -206,7 +235,7 @@ function ScheduleApp() {
                 <li
                   key={index}
                   className={selectedTeacher === teacher ? "selected" : ""}
-                  onClick={() => setSelectedTeacher(teacher)}
+                  onClick={() => handleSelectionChange("teacher", teacher)}
                 >
                   {teacher}
                 </li>
@@ -225,7 +254,16 @@ function ScheduleApp() {
                 student.toLowerCase().includes(searchText.toLowerCase())
               )
               .map((student, index) => (
-                <li key={index}>{student}</li>
+                <li key={index}>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={checkedStudents.includes(student)}
+                      onChange={() => handleCheckboxChange(student)}
+                    />
+                    {student}
+                  </label>
+                </li>
               ))}
           </ul>
         </div>

@@ -73,3 +73,10 @@ li:hover {
   transform: scale(1.02);
   transition: all 0.3s ease;
 }
+
+.student-list input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  transform: scale(1.5); /* 放大 */
+  margin-right: 10px;
+}
