@@ -21,12 +21,12 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 26px;
+  font-size: 48px;
   color: #333;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 35px;
   margin-top: 20px;
   color: #444;
 }
@@ -37,11 +37,12 @@ ul {
 }
 
 li {
-  padding: 12px;
+  font-size: 30px;
+  padding: 20px;
   margin: 8px 0;
   background: #F3F3FA;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -68,7 +69,7 @@ li:hover {
   border: 2px solid #FF8A9A; /* 粉紅邊框 */
   font-weight: bold;
   color: #000;
-  border-radius: 8px;
+  border-radius: 12px;
   transform: scale(1.02);
   transition: all 0.3s ease;
 }
