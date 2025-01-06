@@ -150,7 +150,7 @@ function ScheduleApp() {
         alt="S__432234521.gif"
         className="top-right-image"
       />
-      <h1>長頸鹿美語頭前分校</h1>
+      <h1>長頸鹿美語頭前</h1>
 
       {/* 搜索框 */}
       <div className="search-bar">
