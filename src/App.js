@@ -338,7 +338,7 @@ function ScheduleApp() {
         className="top-right-image"
       />
 
-      <h1>長頸鹿美語頭前</h1>
+      <h1>長頸鹿美語  — 頭前 —</h1>
 
       {/* 搜索框 */}
       <div className="search-bar">

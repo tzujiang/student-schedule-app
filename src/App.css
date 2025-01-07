@@ -4,8 +4,8 @@
 }
 
 body {
-  font-family: "ChenYuluoyan", Arial, sans-serif;
-  background: linear-gradient(135deg, #FFD2D2, #FFC2C2);
+  font-family:  Arial, sans-serif;
+  background: linear-gradient(135deg, #4A3124, #FFC2C2);
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,7 @@ body {
 .schedule-app {
   max-width: 800px;
   margin: 50px auto;
-  background: #FFF8F8;
+  background: #889399;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -21,14 +21,14 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 48px;
-  color: #333;
+  font-size: 42px;
+  color: #4A3124;
 }
 
 h2 {
   font-size: 35px;
   margin-top: 20px;
-  color: #444;
+  color: #D1CDBA;
 }
 
 ul {
@@ -40,7 +40,7 @@ li {
   font-size: 30px;
   padding: 20px;
   margin: 8px 0;
-  background: #F3F3FA;
+  background: #D1CDBA;
   border: 1px solid #ddd;
   border-radius: 12px;
   cursor: pointer;
@@ -48,7 +48,7 @@ li {
 }
 
 li:hover {
-  background-color: #FFD1E1;
+  background-color: #4A3124;
   transform: scale(1.03);
 }
 
@@ -65,10 +65,10 @@ li:hover {
 
 /* 高亮顯示選中項目 */
 .selected {
-  background-color: #FFD1E1; /* 柔和粉色背景 */
-  border: 2px solid #FF8A9A; /* 粉紅邊框 */
+  background-color: #4A3124; /* 柔和粉色背景 */
+  border: 2px solid #4A3124; /* 粉紅邊框 */
   font-weight: bold;
-  color: #000;
+  color: #889399;
   border-radius: 12px;
   transform: scale(1.02);
   transition: all 0.3s ease;
