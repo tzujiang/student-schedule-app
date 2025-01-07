@@ -352,7 +352,7 @@ function ScheduleApp() {
 
       {/* 選擇禮拜幾 */}
       <div className="weekdays">
-        <h2></h2>
+        <h2> </h2>
         <ul>
           {Object.keys(scheduleData).map((day) => (
             <li
