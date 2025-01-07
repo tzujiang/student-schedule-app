@@ -48,7 +48,7 @@ li {
 }
 
 li:hover {
-  background-color: #4A3124;
+  background-color: #8E7861;
   transform: scale(1.03);
 }
 
@@ -65,10 +65,10 @@ li:hover {
 
 /* 高亮顯示選中項目 */
 .selected {
-  background-color: #4A3124; /* 柔和粉色背景 */
-  border: 2px solid #4A3124; /* 粉紅邊框 */
+  background-color: #8E7861; /* 柔和粉色背景 */
+  border: 2px solid #8E7861; /* 粉紅邊框 */
   font-weight: bold;
-  color: #889399;
+  color: #4A3124;
   border-radius: 12px;
   transform: scale(1.02);
   transition: all 0.3s ease;
