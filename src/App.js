@@ -23,13 +23,13 @@ function ScheduleApp() {
       "06:30-08:30": {
         teachers: ["F1 21 Ivy"],
         students: {
-          "F1 21 Ivy": [],
+          "F1 21 Ivy": ["葉佳竹 外", "葉雨姍 外", "張徑綸 外", "謝昊宸 外", "羅荌芝 外", "黃少辰 外", "彭聿廷 外", "4黃椀臨", "5朱梓杰", "5楊士頤", "5林秉亨"],
         },
       },
     },
     "星期二": {
       "04:30-05:30": {
-        teachers: ["B3 11 Monica", "A1 12 Angela", "A3 21 Joanne"],
+        teachers: ["A1.A+ 11 Peter外", "B1 12 Angeline外", "A1.A+.A2.A3 21 Tito外"],
         students: {
           "B3 11 Monica": [],
           "A1 12 Angela": [],
@@ -37,7 +37,7 @@ function ScheduleApp() {
         },
       },
       "05:30-06:30": {
-        teachers: ["A+ 11 Angela", "G2 12 Emma", "B2 21 Ivy"],
+        teachers: ["A3 11 Peter外", "G1.A+ 12 Angeline外", "B2 21 Tito外"],
         students: {
           "A+ 11 Angela": [],
           "G2 12 Emma": [],
@@ -45,7 +45,7 @@ function ScheduleApp() {
         },
       },
       "06:30-07:30": {
-        teachers: ["F1 21 Ivy"],
+        teachers: ["F2.G+ 11 Peter外", "F1.F2 12 Angeline外", "E1 21 Tito外"],
         students: {
           "F1 21 Ivy": [],
         },
