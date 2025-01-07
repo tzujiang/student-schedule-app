@@ -333,8 +333,8 @@ function ScheduleApp() {
     <div className="schedule-app">
       {/* 右上角圖片 */}
       <img
-        src="/S__432234521.gif" // 替換為你的圖片網址或相對路徑
-        alt="S__432234521.gif"
+        src="/S__432390146.gif" // 替換為你的圖片網址或相對路徑
+        alt="S__432390146.gif"
         className="top-right-image"
       />
 
@@ -352,7 +352,7 @@ function ScheduleApp() {
 
       {/* 選擇禮拜幾 */}
       <div className="weekdays">
-        <h2>選擇禮拜幾</h2>
+        <h2></h2>
         <ul>
           {Object.keys(scheduleData).map((day) => (
             <li
@@ -370,7 +370,7 @@ function ScheduleApp() {
       {selectedDay && (
         <div className="schedule-list">
           <h2>
-            選擇時段（{selectedDay}）
+            時段（{selectedDay}）
             {/* 新增時段表單 */}
             <div style={{ marginTop: "10px" }}>
               <input
@@ -410,7 +410,7 @@ function ScheduleApp() {
       {selectedDay && selectedTime && (
         <div className="teacher-list">
           <h2>
-            選擇老師（{selectedDay} {selectedTime}）
+            老師（{selectedDay} {selectedTime}）
             {/* 新增老師表單 */}
             <div style={{ marginTop: "10px" }}>
               <input
