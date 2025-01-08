@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 20px;
   color: #D1CDBA;
 }
@@ -37,8 +37,8 @@ ul {
 }
 
 li {
-  font-size: 31px;
-  padding: 20px;
+  font-size: 25px;
+  padding: 16px;
   margin: 8px 0;
   background: #D1CDBA;
   border: 1px solid #ddd;
@@ -55,7 +55,7 @@ li:hover {
 /* 右上角圖片 */
 .top-right-image {
   position: absolute;
-  top: 10px;
+  top: 170px;
   right: 10px;
   width: 100px; /* 調整圖片寬度 */
   height: 100px; /* 調整圖片高度 */

@@ -338,7 +338,15 @@ function ScheduleApp() {
         className="top-right-image"
       />
 
-      <h1>長頸鹿美語  — 頭前 —</h1>
+      <h1 style={{ textAlign: "center" }}>
+          長頸鹿美語
+          <br />
+          <span style={{ fontSize: "1.4rem" }}>
+            — 頭前 —
+          </span>
+          
+            
+      </h1>
 
       {/* 搜索框 */}
       <div className="search-bar">
@@ -348,11 +356,14 @@ function ScheduleApp() {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
+        
       </div>
 
       {/* 選擇禮拜幾 */}
       <div className="weekdays">
-        <h2> </h2>
+        <h2> 
+          
+        </h2>
         <ul>
           {Object.keys(scheduleData).map((day) => (
             <li
@@ -371,6 +382,11 @@ function ScheduleApp() {
         <div className="schedule-list">
           <h2>
             時段（{selectedDay}）
+            <img
+              src="/S__432390147.gif"
+              alt="Time icon"
+              style={{ width: "70px", marginRight: "8px" }}
+            />
             {/* 新增時段表單 */}
             <div style={{ marginTop: "10px" }}>
               <input
@@ -410,7 +426,12 @@ function ScheduleApp() {
       {selectedDay && selectedTime && (
         <div className="teacher-list">
           <h2>
-            老師（{selectedDay} {selectedTime}）
+            老師（{selectedTime}）
+            <img
+              src="/S__432390148.gif"
+              alt="Time icon"
+              style={{ width: "70px", marginRight: "8px" }}
+            />
             {/* 新增老師表單 */}
             <div style={{ marginTop: "10px" }}>
               <input
@@ -454,7 +475,12 @@ function ScheduleApp() {
       {selectedDay && selectedTime && selectedTeacher && (
         <div className="student-list">
           <h2>
-            學生名單（{selectedDay} {selectedTime} 老師：{selectedTeacher}）
+            學生（{selectedTeacher}）
+            <img
+              src="/S__432390149.gif"
+              alt="Time icon"
+              style={{ width: "70px", marginRight: "8px" }}
+            />
             {/* 新增學生表單 */}
             <div style={{ marginTop: "10px" }}>
               <input
