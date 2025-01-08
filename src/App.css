@@ -63,6 +63,32 @@ li:hover {
   /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
+/*.time-image {
+  position: absolute;
+  top: 170px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+
+.teacher-image {
+  position: absolute;
+  top: 170px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+
+}
+
+.student-image {
+  position: absolute;
+  top: 170px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+}*/
+
 /* 高亮顯示選中項目 */
 .selected {
   background-color: #8E7861; /* 柔和粉色背景 */

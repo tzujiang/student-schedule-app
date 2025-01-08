@@ -385,7 +385,8 @@ function ScheduleApp() {
             <img
               src="/S__432390147.gif"
               alt="Time icon"
-              style={{ width: "70px", marginRight: "8px" }}
+              style={{ width: "120px", marginRight: "8px" }}
+              className="time-image"
             />
             {/* 新增時段表單 */}
             <div style={{ marginTop: "10px" }}>
@@ -430,7 +431,8 @@ function ScheduleApp() {
             <img
               src="/S__432390148.gif"
               alt="Time icon"
-              style={{ width: "70px", marginRight: "8px" }}
+              style={{ width: "120px", marginRight: "8px" }}
+              className="teacher-image"
             />
             {/* 新增老師表單 */}
             <div style={{ marginTop: "10px" }}>
@@ -479,7 +481,8 @@ function ScheduleApp() {
             <img
               src="/S__432390149.gif"
               alt="Time icon"
-              style={{ width: "70px", marginRight: "8px" }}
+              style={{ width: "120px", marginRight: "8px" }}
+              className="student-image"
             />
             {/* 新增學生表單 */}
             <div style={{ marginTop: "10px" }}>
