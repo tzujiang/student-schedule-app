@@ -381,7 +381,7 @@ function ScheduleApp() {
       {selectedDay && (
         <div className="schedule-list">
           <h2>
-            時段（{selectedDay}）
+            時段（{selectedDay}）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img
               src="/S__432390147.gif"
               alt="Time icon"
@@ -426,7 +426,7 @@ function ScheduleApp() {
       {selectedDay && selectedTime && (
         <div className="teacher-list">
           <h2>
-            老師（{selectedTime}）
+            老師（{selectedTime}）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img
               src="/S__432390148.gif"
               alt="Time icon"
@@ -475,7 +475,7 @@ function ScheduleApp() {
       {selectedDay && selectedTime && selectedTeacher && (
         <div className="student-list">
           <h2>
-            學生（{selectedTeacher}）
+            學生（{selectedTeacher}）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img
               src="/S__432390149.gif"
               alt="Time icon"
